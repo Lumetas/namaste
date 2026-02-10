@@ -56,7 +56,7 @@ install: st
 	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/st.1
 	tic -sx st.info
 	mkdir -p $(DESTDIR)$(PREFIX)/share/applications
-	cp -f st.desktop $(DESTDIR)$(PREFIX)/share/applications
+	cp -f namaste.desktop $(DESTDIR)$(PREFIX)/share/applications
 	mkdir -p $(DESTDIR)$(ICONPREFIX)
 	test -f $(ICONNAME) && test ! -f $(DESTDIR)$(ICONPREFIX)/$(ICONNAME) && cp -f $(ICONNAME) $(DESTDIR)$(ICONPREFIX) || :
 	@echo Please see the README file regarding the terminfo entry of st.
